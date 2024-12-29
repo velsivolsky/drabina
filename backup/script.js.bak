@@ -1,0 +1,78 @@
+const hamburger = document.getElementById('hamburger');
+const navPanel = document.getElementById('nav-panel');
+
+// Toggle menu on hamburger click
+hamburger.addEventListener('click', (event) => {
+    navPanel.classList.toggle('active');
+    hamburger.classList.toggle('active');
+    event.stopPropagation(); // Prevent event from bubbling up
+});
+
+// Close menu when clicking outside of the menu and hamburger
+document.addEventListener('click', (event) => {
+    const isClickInsideMenu = navPanel.contains(event.target);
+    const isClickInsideHamburger = hamburger.contains(event.target);
+    
+    // If the click is outside the menu and hamburger, close the menu
+    if (!isClickInsideMenu && !isClickInsideHamburger) {
+        navPanel.classList.remove('active');
+        hamburger.classList.remove('active');
+    }
+});
+
+// DARK MODE
+document.addEventListener("DOMContentLoaded", () => {
+    const themeSwitcher = document.querySelector(".theme-switch__checkbox");
+    
+    // Check saved theme from localStorage
+    const savedTheme = localStorage.getItem("theme");
+    
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark-mode");
+        themeSwitcher.checked = true;
+    } else {
+        document.body.classList.remove("dark-mode");
+        themeSwitcher.checked = false;
+    }
+
+    // Add event listener for the theme switcher
+    themeSwitcher.addEventListener("change", () => {
+        if (themeSwitcher.checked) {
+            document.body.classList.add("dark-mode");
+            localStorage.setItem("theme", "dark");
+        } else {
+            document.body.classList.remove("dark-mode");
+            localStorage.setItem("theme", "light");
+        }
+    });
+});
+
+
+
+
+
+//AUTO HEADER
+document.addEventListener("DOMContentLoaded", function() {
+    // Load the header
+    fetch("header.html")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Network response was not ok " + response.statusText);
+            }
+            return response.text();
+        })
+        .then(data => {
+            document.getElementById("header-container").innerHTML = data;
+        })
+        .catch(error => {
+            console.error("There was a problem with the fetch operation:", error);
+        });
+
+    // Load the footer if you have one
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("footer-container").innerHTML = data;
+        });
+});
+

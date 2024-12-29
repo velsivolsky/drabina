@@ -1,0 +1,98 @@
+body.dark-mode {
+    background-color: #242424;
+    color: white;
+    
+    .footer-container{
+        p{color:#ece5c6}
+    }
+    .bar{
+        background-color: #ece5c6;
+    }
+
+    .check-offer-button:hover{background-color:black; color:#ece5c6; border-color:#ece5c6}
+
+    :where(.photo-description, .description-home){
+        background-color: #5a071a;
+        color: #ece5c6;
+    }
+
+    :where(.nav-panel ,.nav-panel a, .nav-panel ul, .nav-panel li, .nav-panel ul ul){
+        color: #ece5c6;
+        background-color: #581111
+    }
+
+    .icon{fill: white}
+
+    #instaicon svg path {fill: white;}
+
+    #instaicon:hover svg path {
+        fill: url(#instagramGradient);
+    }
+
+    .footer-info-left,
+    .footer-info-right,
+    .footer-container2 {
+        a{
+            color:#ece5c6
+        }
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        background-color: rgb(61, 61, 61);
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(133, 133, 133, 0.1);
+    }
+
+
+    th{
+        background-color: #800a25;
+        color: #ece5c6;
+    }
+
+        
+    tr{
+        background-color: #581111;
+    } 
+    tr:nth-child(odd) {
+        background-color: #4e0f0f; /* Color for odd rows */
+    }
+
+    tr:hover {
+        background-color: #6e1212;
+        transform: scale(1.01);
+        font-weight: bold;
+    }
+
+    td{
+        
+        color: #ece5c6;
+        border:0px solid #800a25;
+    }
+
+    .offer-button{
+        background-color: #800a25;
+    }
+    .offer-button:hover{
+        background-color: #121212;
+        color:#ece5c6;
+        border-color:#ece5c6;
+    }
+
+    .s3{
+        background-color: #1a1512;
+        color: #ece5c6;
+    }
+
+    .form-container{
+        background-color: #5a071a;
+        color: #ece5c6;
+    }
+    .map{
+        filter:brightness(0.8);
+    }
+
+}

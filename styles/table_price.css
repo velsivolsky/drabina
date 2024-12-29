@@ -1,0 +1,124 @@
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ad1739;
+    font-size: 2em;
+}
+
+.opis{
+    text-align : center;
+}
+/* Styl dla kontenera tabeli */
+.table-container {
+    overflow-x: auto; /* Umożliwia przewijanie w poziomie */
+    
+    margin: 0 auto; /* Wyśrodkowanie kontenera */
+    margin-top:50px;
+    padding: 0 10px; /* Dodanie odstępu od lewej i prawej strony */
+    margin-bottom: 20px; /* Odstęp między tabelami */
+
+}
+/* Styl dla tabeli */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+th, td {
+    padding: 15px;
+    font-size: 1em;
+}
+th {
+    background-color: #ad1739;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    width:30%;
+}
+td {
+    text-align: center;
+    width:30%
+}
+td:first-child {
+    text-align: left;
+    font-weight: bold;
+    transition: font-weight 0.8s ease, padding-left 0.8s ease, text-align 0.8s ease;
+    
+}
+td:first-child:hover {
+    text-align: left;
+    padding-left:20px;
+    
+    
+}
+
+
+tr {
+    transition: transform 0.2s, background-color 0.2s;
+    cursor: pointer;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tr:hover {
+    background-color: #ad1739;
+    color: white;
+    transform: scale(1.01);
+    font-weight: bold;
+}
+
+
+/* Styl dla kontenera przycisku */
+.offer-container {
+       display: flex; /* Use flexbox for the container */
+     justify-content: center;
+    text-align: center; /* Wyśrodkowanie przycisku */
+    margin-top: 20px;
+}
+
+/* Styl dla przycisku */
+.offer-button {
+   /* display: inline-block; */
+   display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #ad1739;
+    border: 2px solid #ad1739;
+    border-radius: 25px; /* Zaokrąglenie rogów */
+    text-decoration: none;
+    transition: all 0.3s ease;
+   margin-left:20px;
+   margin-right:20px;
+}
+
+
+.offer-button:hover {
+    background-color: #ece5c6;
+    color: #ad1739;
+    border-color: #ad1739;
+   
+}
+
+/* Media query dla widoku mobilnego */
+@media (max-width: 400px) {
+    .table-container {
+        padding: 0 5px; /* Dodatkowe zmniejszenie marginesów na wąskich ekranach */
+    }
+
+    table th, table td {
+        font-size: 0.8em; /* Zmniejszenie rozmiaru czcionki */
+        padding: 8px; /* Mniejsze odstępy w komórkach tabeli */
+    }
+}

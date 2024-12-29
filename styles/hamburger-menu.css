@@ -1,0 +1,70 @@
+.navbar {
+    
+    position: relative;
+}
+
+.hamburger {
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 4px;
+    z-index: 1000;
+}
+
+.bar {
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.nav-panel {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Hidden by default */
+    height: 100%;
+    width: 300px;
+    background-color: #ad1739;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease;
+    z-index: 999;
+}
+
+.nav-panel a {
+    text-decoration: underline;
+    color: #ece5c6;
+}
+
+.nav-panel ul {
+    list-style: none;
+    padding: 20px;
+    color: #ece5c6;
+}
+
+.nav-panel ul ul {
+    padding-left: 20px;
+    color: #ece5c6;
+}
+
+.nav-panel li {
+    margin: 10px 0;
+}
+
+.nav-panel.active {
+    right: 0; /* Show the panel */
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}

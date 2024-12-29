@@ -1,0 +1,287 @@
+a {
+    color: black;
+    transition: color 1s ease;
+}
+
+a:hover{
+    color: white;
+}
+
+/* Kontener dla kolumn */
+.columns {
+    align-items: stretch;
+    display: flex;
+    min-height: 100%;
+    justify-content:space-between;
+
+    /* Umożliwia wyświetlanie kolumn obok siebie */
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 50px;
+    margin-left:50px;
+    
+    
+}
+
+h1{
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 60px;
+    color: #ad1739;
+}
+
+/* Kontener kafelków */
+.tile-container {
+    flex: 1;
+    /* Umożliwia równą szerokość kolumn */
+    display: flex;
+    flex-direction: column;
+    /* Ustalamy kierunek jako kolumnowy */
+    gap: 16px;
+    /* Odstęp między kafelkami */
+}
+
+/* Kontener lewej kolumny */
+.tile-container.left {
+    margin-right: 16px;
+    align-self: flex-start;
+    /* Odstęp między lewą a prawą kolumną */
+}
+
+/* Kontener prawej kolumny */
+.tile-container.right {
+    margin-left: 16px;
+    /* Odstęp między lewą a prawą kolumną */
+}
+
+/* Pojedynczy kafelek */
+.tile {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+    /* Umożliwia umiejscowienie opisu */
+    color: #fff;
+    /* Kolor tekstu na białym tle */
+    background-size: cover;
+    /* Ustawia tło, aby zakrywało cały kafelek */
+    background-position: center;
+    /* Ustawia obrazek w centrum kafelka */
+    transition: transform 0.3s;
+    /* Umożliwia animację transformacji */
+   
+}
+
+.tile-image{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.tile-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.tile-details {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.tile-description {
+    max-height: 0;
+    /* Ukrycie opisu na początku */
+    overflow: hidden;
+    /* Ukrycie zawartości, która jest poza maksymalną wysokością */
+    transition: max-height 0.3s ease-in-out;
+    /* Animacja wysokości */
+}
+
+.tile.expanded .tile-description {
+    max-height: 200px;
+    /* Ustal maksymalną wysokość, gdy kafelek jest rozwinięty */
+}
+
+/* Kolory i obrazy dla kafelków */
+.tile-1 {
+    background-color: #ad1739;
+    transition: background-color 1s ease;
+    /* Kolor tła kafelka 1 */
+
+}
+
+.tile-1:hover{
+    background-color: #cf1a44;
+
+}
+
+.tile-2 {
+    position: relative;
+    color: #000000;
+    background-color: #e3b98f;
+    transition: background-color 1s ease;
+    /* Kolor tła kafelka 2 */
+}
+
+.tile-2:hover {
+    background-color: #f8c99a;
+}
+
+.tile-3 {
+    background-color: #ad1739;
+    transition: background-color 1s ease;
+    /* Kolor tła kafelka 3 */
+}
+
+.tile-3:hover{
+    background-color: #cf1a44;
+}
+
+.tile-4 {
+    color: #000000;
+    background-color: #e3b98f;
+    transition: background-color 1s ease;
+    /* Kolor tła kafelka 4 */
+}
+
+.tile-4:hover{
+    background-color: #f8c99a;
+}
+
+.tile-5 {
+    color: #000000;
+    background-color: #e3b98f;
+    transition: background-color 1s ease;
+    /* Kolor tła kafelka 4 */
+}
+
+.tile-5:hover{
+    background-color: #f8c99a;
+}
+
+.tile-6 {
+    background-color: #ad1739;
+    transition: background-color 1s ease;
+    /* Kolor tła kafelka 3 */
+}
+
+.tile-6:hover{
+    background-color: #cf1a44;
+}
+
+.tile-7 {
+    color: #000000;
+    background-color: #e3b98f;
+    transition: background-color 1s ease;
+    /* Kolor tła kafelka 4 */
+}
+
+.tile-7:hover{
+    background-color: #f8c99a;
+}
+
+.tile-8 {
+    background-color: #ad1739;
+    transition: background-color 1s ease;
+    /* Kolor tła kafelka 3 */
+}
+
+.tile-8:hover{
+    background-color: #cf1a44;
+}
+
+.tile-9 {
+    background-color: #ad1739;
+    transition: background-color 1s ease;
+    /* Kolor tła kafelka 3 */
+}
+
+.tile-9:hover{
+    background-color: #cf1a44;
+}
+
+
+/* Media query dla widoku mobilnego */
+@media (max-width: 400px) {
+    .columns {
+        flex-direction: column;
+        /* Ustaw kolumny w jednym pionowym układzie */
+        width: 100%;
+        /* Ustaw szerokość na 100% dla mobilnych urządzeń */
+        align-items: center;
+    }
+
+    .tile-image {
+        top: 40px;
+        right: 10px;
+    }
+
+    .tile-container {
+        width: 100%;
+        /* Ustaw kontener kafelków na 100% szerokości */
+        margin: 0 auto;
+        /* Usuń marginesy, aby wypełnić cały ekran */
+    }
+
+    .tile-container.left,
+    .tile-container.right {
+        margin: 0 auto;
+        /*centrowanie kontenerów */
+    }
+
+    .tile-container.left {
+        margin-bottom: 16px;
+    }
+
+    .tile {
+        margin-bottom: 16px;
+        /* Ustaw margines dolny dla odstępu między kafelkami */
+    }
+
+    .offer-container {
+        margin-left: 110px;
+    }
+}
+
+/* Styl dla kontenera przycisku */
+.offer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    
+}
+
+/* Styl dla przycisku */
+.offer-button {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #ad1739;
+    border: 2px solid #ad1739;
+    border-radius: 25px;
+    /* Zaokrąglenie rogów */
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.offer-button:hover {
+    background-color: #dbd5cc;
+    color: #ad1739;
+    border-color: #ad1739;
+}
