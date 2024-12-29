@@ -1,271 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="/styles/styles.css">
-    <link rel="stylesheet" href="/styles/dark-mode-switcher.css">
-    <link rel="stylesheet" href="/styles/hamburger-menu.css">
-    <link rel="stylesheet" href="/styles/dark-mode.css">
-    <link rel="stylesheet" href="/styles/offer.css">
-</head>
-<body>
-    <div id="header-container"></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="/styles/styles.css">
+        <link rel="stylesheet" href="/styles/dark-mode-switcher.css">
+        <link rel="stylesheet" href="/styles/hamburger-menu.css">
+        <link rel="stylesheet" href="/styles/dark-mode.css">
+        <link rel="stylesheet" href="/styles/offer.css">
+    </head>
+    <body>
+        <div id="header-container"></div>
 
-    <div class="offer-header">
-        <h1>Oferta</h1>
-    </div>
-    <div class="columns">
+        <div class="offer-header">
+            <h1>Oferta</h1>
+        </div>
+        <div class="columns">
 
-        <!-- Kontener lewej kolumny -->
-        <div class="tile-container left">
-            <!-- Kafelek 1 -->
-            <div class="tile tile-1" onclick="toggleDescription(this)">
-                <img src = "https://www.ptdrabina.pl/lib/nord78/Frame-2-m48vmv0d.png" alt="Ikona" class="tile-image">
-                <div class="tile-header">Terapia pedagogiczna / oligofrenopedagogiczna<br> 
-                   (z elementami VB-MAPP)
+            <!-- Kontener lewej kolumny -->
+            <div class="tile-container left">
+                <!-- Kafelek 1 -->
+                <div class="tile tile-1" onclick="toggleDescription(this)">
+                    <img
+                        src="https://www.ptdrabina.pl/lib/nord78/Frame-2-m48vmv0d.png"
+                        alt="Ikona" class="tile-image">
+                    <div class="tile-header"><h2>Terapia pedagogiczna /
+                            oligofrenopedagogiczna<br>
+                            (z elementami VB-MAPP)</h2>
+                    </div>
+                    <div class="tile-details"><p>Szczegóły</p></div>
+                    <div class="tile-description">
+                        <p>Specjalistyczna forma wsparcia skierowana do dzieci
+                            <br>i młodzieży
+                            z trudnościami w uczeniu się. Jej
+                            celem jest rozwijanie umiejętności szkolnych oraz
+                            kompensowanie deficytów rozwojowych, rozwijanie
+                            funkcji poznawczych, wzmacnianie motywacji i
+                            wyrównywanie braków edukacyjnych. Podczas terapii
+                            pracujemy również nad trudnymi zachowaniami,
+                            analizując ich przyczyny i szukając skutecznych
+                            strategii, które pomogą w radzeniu sobie z nimi
+                            <br>w codziennym życiu. Proces ten obejmuje zarówno
+                            zrozumienie trudności, jak i rozwijanie umiejętności
+                            wspierających pozytywne
+                            zmiany.<br><br><b>Terapia zawsze poprzedzona jest
+                                konsultacją oligofrenopedagogiczną lub diagnozą
+                                VB-MAPP.</b></p>
+                    </div>
                 </div>
-                <div class="tile-details">Szczegóły</div>
-                <div class="tile-description">
-                    Specjalistyczna forma wsparcia skierowana do dzieci <br>i młodzieży 
-                   z trudnościami w uczeniu się. Jej
-                    celem jest rozwijanie umiejętności szkolnych oraz kompensowanie deficytów rozwojowych, rozwijanie
-                    funkcji poznawczych, wzmacnianie motywacji i wyrównywanie braków edukacyjnych. Podczas terapii
-                    pracujemy również nad trudnymi zachowaniami, analizując ich przyczyny i szukając skutecznych
-                    strategii, które pomogą w radzeniu sobie z nimi <br>w codziennym życiu. Proces ten obejmuje zarówno
-                    zrozumienie trudności, jak i rozwijanie umiejętności wspierających pozytywne
-                    zmiany.<br><br><b>Terapia zawsze poprzedzona jest konsultacją oligofrenopedagogiczną lub diagnozą
-                        VB-MAPP.</b>
-                </div>
-            </div>
-            <!-- Kafelek 2 -->
-            <div class="tile tile-2" onclick="toggleDescription(this)">
-                <img src = "https://www.ptdrabina.pl/lib/nord78/Frame-8-m48vnac4.png
+                <!-- Kafelek 2 -->
+                <div class="tile tile-2" onclick="toggleDescription(this)">
+                    <img
+                        src="https://www.ptdrabina.pl/lib/nord78/Frame-8-m48vnac4.png
 " alt="Ikona" class="tile-image">
-                <div class="tile-header">Trening umiejętności społecznych</div>
-                <div class="tile-details">Szczegóły</div>
-                <div class="tile-description">
-                    Program terapeutyczny, który ma na celu rozwijanie kompetencji społecznych, takich jak komunikacja,
-                    współpraca, rozwiązywanie konfliktów, budowanie relacji, wzmacnianie samooceny oraz radzenie sobie z
-                    emocjami. 
+                    <div class="tile-header"><h2>Trening umiejętności
+                            społecznych</h2></div>
+                    <div class="tile-details"><p>Szczegóły</p></div>
+                    <div class="tile-description">
+                        <p>Program terapeutyczny, który ma na celu rozwijanie
+                            kompetencji społecznych, takich jak komunikacja,
+                            współpraca, rozwiązywanie konfliktów, budowanie
+                            relacji, wzmacnianie samooceny oraz radzenie sobie z
+                            emocjami.</p>
+                    </div>
                 </div>
-            </div>
-            <!-- Kafelek 3 -->
-            <div class="tile tile-3" onclick="toggleDescription(this)">
-               <img src = "https://www.ptdrabina.pl/lib/nord78/Frame-2-m48vmv0d.png" alt="Ikona" class="tile-image">
-                <div class="tile-header">Zajęcia z komunikacji AAC</div>
-                <div class="tile-details">Szczegóły</div>
-                <div class="tile-description">
-                    Regularnie prowadzone spotkania, które mają na celu wspieranie osób korzystających z alternatywnych<br>
-                    i wspomagających metod komunikacji (AAC), jak i tych które jeszcze z nich nie korzystają, ale
-                    wymagają wsparcia w rozwijaniu umiejętności komunikacyjnych. Zajęcia te są dostosowane do
-                    indywidualnych potrzeb uczestnika i obejmują: rozwijanie umiejętności porozumiewania się za pomocą
-                    narzędzi AAC, ćwiczenia konkretnych sytuacji komunikacyjnych z życia codziennego, wspieranie
-                    uczestnika w budowaniu większej niezależności w komunikacji, współpracy z otoczeniem (np.
-                    opiekunami, nauczycielami) w celu skuteczniejszego wdrażania i rozwijania narzędzi AAC.<br><br>
-                    <b>Pierwsze zajęcia poprzedzone są specjalistyczną konsultacją.<br><br>
-                        Dodatkowo, dla osób regularnie uczestniczących w zajęciach, istnieje możliwość przygotowania spersonalizowanego narzędzia do komunikacji AAC,
-                        idealnie dopasowanego do potrzeb i możliwości uczestnika.</b>
+                <!-- Kafelek 3 -->
+                <div class="tile tile-3" onclick="toggleDescription(this)">
+                    <img
+                        src="https://www.ptdrabina.pl/lib/nord78/Frame-2-m48vmv0d.png"
+                        alt="Ikona" class="tile-image">
+                    <div class="tile-header"><h2>Zajęcia z komunikacji
+                            AAC</h2></div>
+                    <div class="tile-details"><p>Szczegóły</p></div>
+                    <div class="tile-description">
+                        <p>Regularnie prowadzone spotkania, które mają na celu
+                            wspieranie osób korzystających z alternatywnych<br>
+                            i wspomagających metod komunikacji (AAC), jak i tych
+                            które jeszcze z nich nie korzystają, ale
+                            wymagają wsparcia w rozwijaniu umiejętności
+                            komunikacyjnych. Zajęcia te są dostosowane do
+                            indywidualnych potrzeb uczestnika i obejmują:
+                            rozwijanie umiejętności porozumiewania się za pomocą
+                            narzędzi AAC, ćwiczenia konkretnych sytuacji
+                            komunikacyjnych z życia codziennego, wspieranie
+                            uczestnika w budowaniu większej niezależności w
+                            komunikacji, współpracy z otoczeniem (np.
+                            opiekunami, nauczycielami) w celu skuteczniejszego
+                            wdrażania i rozwijania narzędzi AAC.<br><br>
+                            <b>Pierwsze zajęcia poprzedzone są specjalistyczną
+                                konsultacją.<br><br>
+                                Dodatkowo, dla osób regularnie uczestniczących w
+                                zajęciach, istnieje możliwość przygotowania
+                                spersonalizowanego narzędzia do komunikacji AAC,
+                                idealnie dopasowanego do potrzeb i możliwości
+                                uczestnika.</b></p>
+                    </div>
                 </div>
-            </div>
-            <!-- Kafelek 4 -->
-            <div class="tile tile-4" onclick="toggleDescription(this)">
-               <img src = "https://www.ptdrabina.pl/lib/nord78/Frame-8-m48vnac4.png
+                <!-- Kafelek 4 -->
+                <div class="tile tile-4" onclick="toggleDescription(this)">
+                    <img
+                        src="https://www.ptdrabina.pl/lib/nord78/Frame-8-m48vnac4.png
 " alt="Ikona" class="tile-image">
-                <div class="tile-header">Konsultacje AAC</div>
-                <div class="tile-details">Szczegóły</div>
-                <div class="tile-description">
-                    Konsultacja z zakresu komunikacji alternatywnej w wspomaganej to jednorazowe spotkanie, przeznaczone
-                    dla osób, które chcą uzyskać wskazówki dotyczące komunikacji AAC. Podczas konsultacji istnieje
-                    możliwość omówienia trudności związanych z komunikacją i doboru odpowiednich rozwiązań, zapoznania
-                    się z dostępnymi narzędziami AAC, uzyskania porad dotyczących wprowadzenia i rozwijania komunikacji
-                    AAC w codziennym życiu, skonsultowania pomysłów na spersonalizowane narzędzia lub strategie, które
-                    najlepiej odpowiadają potrzebom osoby wymagającej wsparcia w komunikacji.<br><br>
-                    <b>Konsultacja jest wymagana przed rozpoczęciem cyklu zajęć z komunikacji AAC.</b>
+                    <div class="tile-header"><h2>Konsultacje AAC</h2></div>
+                            <div class="tile-details"><p>Szczegóły</p></div>
+                            <div class="tile-description">
+                                <p>Konsultacja z zakresu komunikacji
+                                    alternatywnej w wspomaganej to jednorazowe
+                                    spotkanie, przeznaczone
+                                    dla osób, które chcą uzyskać wskazówki
+                                    dotyczące komunikacji AAC. Podczas
+                                    konsultacji istnieje
+                                    możliwość omówienia trudności związanych z
+                                    komunikacją i doboru odpowiednich rozwiązań,
+                                    zapoznania
+                                    się z dostępnymi narzędziami AAC, uzyskania
+                                    porad dotyczących wprowadzenia i rozwijania
+                                    komunikacji
+                                    AAC w codziennym życiu, skonsultowania
+                                    pomysłów na spersonalizowane narzędzia lub
+                                    strategie, które
+                                    najlepiej odpowiadają potrzebom osoby
+                                    wymagającej wsparcia w komunikacji.<br><br>
+                                    <b>Konsultacja jest wymagana przed
+                                        rozpoczęciem cyklu zajęć z komunikacji
+                                        AAC.</b></p>
 
-                </div>
-            </div>
-            <!-- Kafelek 9 -->
-            <div class="tile tile-9" onclick="toggleDescription(this)">
-               <img src = "https://www.ptdrabina.pl/lib/nord78/Frame-2-m48vmv0d.png" alt="Ikona" class="tile-image">
-                <div class="tile-header">Diagnozy</div>
-                <div class="tile-details">Szczegóły</div>
-                <div class="tile-description">
-                    - VB-MAPP<br>
-                    - Rozwoju psychoruchowego (KORP)<br>
-                    - Słuchu fonemowego (KOSF)<br>
-                    - Motoryki małej i funkcji grafomotorycznych<br>
-                    - Zaburzeń rozwoju mowy (neurologopedyczna)<br>
-                    - Jakościowa diagnoza rozwoju psychoruchowego (KOJR)<br><br>
-                    Szczegółowy opis diagnoz dostępny jest <a href="https://www.ptdrabina.pl/diagnozy" target="_blank"
-                        rel="noopener noreferrer"><b>TUTAJ</b></a>
-                </div>
-            </div>
+                            </div>
+                        </div>
+                        <!-- Kafelek 9 -->
+                        <div class="tile tile-9"
+                            onclick="toggleDescription(this)">
+                            <img
+                                src="https://www.ptdrabina.pl/lib/nord78/Frame-2-m48vmv0d.png"
+                                alt="Ikona" class="tile-image">
+                            <div class="tile-header"><h2>Diagnozy</h2></div>
+                            <div class="tile-details"><p>Szczegóły</p></div>
+                            <div class="tile-description">
+                                <p>- VB-MAPP<br>
+                                    - Rozwoju psychoruchowego (KORP)<br>
+                                    - Słuchu fonemowego (KOSF)<br>
+                                    - Motoryki małej i funkcji
+                                    grafomotorycznych<br>
+                                    - Zaburzeń rozwoju mowy
+                                    (neurologopedyczna)<br>
+                                    - Jakościowa diagnoza rozwoju
+                                    psychoruchowego (KOJR)<br><br>
+                                    Szczegółowy opis diagnoz dostępny jest <a
+                                        href="https://www.ptdrabina.pl/diagnozy"
+                                        target="_blank"
+                                        rel="noopener noreferrer"><b>TUTAJ</b></a></p>
+                            </div>
+                        </div>
+                    </div>
 
-
-
-
-
-        </div>
-
-        <!-- Kontener prawej kolumny -->
-        <div class="tile-container right">
-            <!-- Kafelek 5 -->
-            <div class="tile tile-5" onclick="toggleDescription(this)">
-               <img src = "https://www.ptdrabina.pl/lib/nord78/Frame-8-m48vnac4.png
+                    <!-- Kontener prawej kolumny -->
+                    <div class="tile-container right">
+                        <!-- Kafelek 5 -->
+                        <div class="tile tile-5"
+                            onclick="toggleDescription(this)">
+                            <img
+                                src="https://www.ptdrabina.pl/lib/nord78/Frame-8-m48vnac4.png
 " alt="Ikona" class="tile-image">
-                <div class="tile-header">Terapia ręki i zaburzeń motoryki małej
-                </div>
-                <div class="tile-details">Szczegóły</div>
-                <div class="tile-description">
-                    Specjalistyczna forma rehabilitacji, której celem jest poprawa sprawności dłoni, palców oraz
-                    koordynacji wzrokowo-ruchowej. Terapia ta jest często stosowania u dzieci z trudnościami w
-                    wykonywaniu precyzyjnych ruchów, co utrudnia im realizację codziennych czynności.<br><br>
-                    <b>Terapia powinna być poprzedzona diagnozą motoryki małej i funkcji grafomotorycznych.</b>
+                            <div class="tile-header"><h2></h2>Terapia ręki i
+                                zaburzeń motoryki małej</h2>
+                        </div>
+                        <div class="tile-details"><p>Szczegóły</p></div>
+                        <div class="tile-description">
+                            <p>Specjalistyczna forma rehabilitacji, której celem
+                                jest poprawa sprawności dłoni, palców oraz
+                                koordynacji wzrokowo-ruchowej. Terapia ta jest
+                                często stosowania u dzieci z trudnościami w
+                                wykonywaniu precyzyjnych ruchów, co utrudnia im
+                                realizację codziennych czynności.<br><br>
+                                <b>Terapia powinna być poprzedzona diagnozą
+                                    motoryki małej i funkcji
+                                    grafomotorycznych.</b></p>
 
-                </div>
-            </div>
-            <!-- Kafelek 6 -->
-            <div class="tile tile-6" onclick="toggleDescription(this)">
-               <img src = "https://www.ptdrabina.pl/lib/nord78/Frame-2-m48vmv0d.png" alt="Ikona" class="tile-image">
-                <div class="tile-header">Logorytmika</div>
-                <div class="tile-details">Szczegóły</div>
-                <div class="tile-description">
-                    Wyjątkowe połączenie ćwiczeń logopedycznych, rytmicznych i ruchowych, które wspierają rozwój mowy,
-                    komunikacji oraz koordynacji u dzieci i młodzieży. Logorytmika wpływa pozytywnie na rozwój mowy,
-                    integrację sensoryczną, stymuluje motorycznie, poprawia koncentrację i pamięć, wywołuje radość oraz
-                    buduje motywację i pewność siebie.
-                </div>
-            </div>
-            <!-- Kafelek 7 -->
-            <div class="tile tile-7" onclick="toggleDescription(this)">
-               <img src = "https://www.ptdrabina.pl/lib/nord78/Frame-8-m48vnac4.png
+                        </div>
+                    </div>
+                    <!-- Kafelek 6 -->
+                    <div class="tile tile-6" onclick="toggleDescription(this)">
+                        <img
+                            src="https://www.ptdrabina.pl/lib/nord78/Frame-2-m48vmv0d.png"
+                            alt="Ikona" class="tile-image">
+                        <div class="tile-header"><h2>Logorytmika</h2></div>
+                        <div class="tile-details"><p>Szczegóły</p></div>
+                        <div class="tile-description">
+                            <p>Wyjątkowe połączenie ćwiczeń logopedycznych,
+                                rytmicznych i ruchowych, które wspierają rozwój
+                                mowy,
+                                komunikacji oraz koordynacji u dzieci i
+                                młodzieży. Logorytmika wpływa pozytywnie na
+                                rozwój mowy,
+                                integrację sensoryczną, stymuluje motorycznie,
+                                poprawia koncentrację i pamięć, wywołuje radość
+                                oraz
+                                buduje motywację i pewność siebie.</p>
+                        </div>
+                    </div>
+                    <!-- Kafelek 7 -->
+                    <div class="tile tile-7" onclick="toggleDescription(this)">
+                        <img
+                            src="https://www.ptdrabina.pl/lib/nord78/Frame-8-m48vnac4.png
 " alt="Ikona" class="tile-image">
-                <div class="tile-header">Terapia neurologopedyczna</div>
-                <div class="tile-details">Szczegóły</div>
-                <div class="tile-description">
-                    Specjalistyczna forma wsparcia, która ma na celu leczenie zaburzeń mowy, komunikacji i języka.
-                    Efektem terapii jest poprawa artykulacji, poszerzone kompetencje językowe, zwiększona płynność mowy
-                    i rozwój umiejętności słuchowego przetwarzania mowy. <br><br>
-                    <b>Terapia poprzedzona jest diagnozą neurologopedyczną.</b>
+                        <div class="tile-header"><h2>Terapia
+                                neurologopedyczna</h2></div>
+                        <div class="tile-details"><p>Szczegóły</p></div>
+                        <div class="tile-description">
+                            <p>Specjalistyczna forma wsparcia, która ma na celu
+                                leczenie zaburzeń mowy, komunikacji i języka.
+                                Efektem terapii jest poprawa artykulacji,
+                                poszerzone kompetencje językowe, zwiększona
+                                płynność mowy
+                                i rozwój umiejętności słuchowego przetwarzania
+                                mowy. <br><br>
+                                <b>Terapia poprzedzona jest diagnozą
+                                    neurologopedyczną.</b></p>
+
+                        </div>
+                    </div>
+                    <!-- Kafelek 8 -->
+                    <div class="tile tile-8" onclick="toggleDescription(this)">
+                        <img
+                            src="https://www.ptdrabina.pl/lib/nord78/Frame-2-m48vmv0d.png"
+                            alt="Ikona" class="tile-image">
+                        <div class="tile-header"><h2>Szkolenia z zakresu
+                                AAC</h2></div>
+                        <div class="tile-details"><p>Szczegóły</p></div>
+                        <div class="tile-description">
+                            <p>Szkolenia te mają na celu rozwijanie kompetencji
+                                nauczycieli i specjalistów pracujących z osobami
+                                z
+                                trudnościami w komunikacji werbalnej,
+                                szczególnie w obszarze komunikacji alternatywnej
+                                i
+                                wspomaganej. <br><br>
+                                <b>Więcej informacji na temat szkoleń AAC
+                                    znajduje się <a
+                                        href="https://www.ptdrabina.pl/szkolenia_aac"
+                                        target="_blank"
+                                        rel="noopener noreferrer">TUTAJ</a></b></p>
+                        </div>
+                    </div>
 
                 </div>
             </div>
-            <!-- Kafelek 8 -->
-            <div class="tile tile-8" onclick="toggleDescription(this)">
-               <img src = "https://www.ptdrabina.pl/lib/nord78/Frame-2-m48vmv0d.png" alt="Ikona" class="tile-image">
-                <div class="tile-header">Szkolenia z zakresu AAC</div>
-                <div class="tile-details">Szczegóły</div>
-                <div class="tile-description">
-                    Szkolenia te mają na celu rozwijanie kompetencji nauczycieli i specjalistów pracujących z osobami z
-                    trudnościami w komunikacji werbalnej, szczególnie w obszarze komunikacji alternatywnej i
-                    wspomaganej. <br><br>
-                    <b>Więcej informacji na temat szkoleń AAC znajduje się <a href="https://www.ptdrabina.pl/szkolenia_aac"
-                            target="_blank" rel="noopener noreferrer">TUTAJ</a></b>
-                </div>
+            <div class="offer-container">
+                <a href="ceny.html" class="offer-button">Cennik</a>
             </div>
+            <p><br><br><br></p>
 
-        </div>
-        </div>
-    <div class="offer-container">
-        <a href="ceny.html" class="offer-button">Cennik</a>
-    </div> 
-   <p><br><br><br></p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class=footer-container>
-        <div class=footer-photo-container>
-            <img class = footer-logo src="/resources/logo/Poziom/Poziom kolor.png" alt="Logo">
-        </div>
-        <div class="footer-info-adress">
-            <p>Pracownia Terapeutyczna Drabina</p>
-            <p>ul. Warszawska 151</p>
-            <p>80-180 Gdańsk</p>
-        </div>
-        <div class="footer-container2">
-            <div class="footer-info-adress">
-                <a href="mailto:biuro@ptdrabina.pl">biuro@ptdrabina.pl</a>
-                <p></p>
-                <a href="tel:+48572870161">+48 572 870 161</a>
-                <p></p>
-                <a href="tel:+48572806359">+48 572 806 359</a>
+            <div class="footer-container">
+                <div id="footer-photo-container"></div>
+                <div id="footer-info-adress"></div>
+                <div id="footer-container2"></div>
+                <div id="footer-info-contact"></div>
             </div>
-            <div class="icons-container">
-                <!-- Instagram Icon -->
-                <a href="https://www.instagram.com/pt_drabina/" target="_blank" class="icon instagram" id="instaicon">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="none">
-                    <defs>
-                        <linearGradient id="instagramGradient" x1="0" y1="0" x2="1" y2="1">
-                            <stop offset="0%" stop-color="#f09433" />
-                            <stop offset="25%" stop-color="#e6683c" />
-                            <stop offset="50%" stop-color="#dc2743" />
-                            <stop offset="75%" stop-color="#cc2366" />
-                            <stop offset="100%" stop-color="#bc1888" />
-                        </linearGradient>
-                    </defs>
-                    <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9 114.9-51.3 114.9-114.9S287.6 141 224.1 141zm0 186c-39.4 0-71.1-31.8-71.1-71.1s31.8-71.1 71.1-71.1 71.1 31.8 71.1 71.1-31.8 71.1-71.1 71.1zm146.4-194.3c0 14.9-12.1 27-27 27-14.9 0-27-12.1-27-27s12.1-27 27-27 27 12.1 27 27zm76.1 27.2c-1.7-35.7-9.9-67.2-36.2-93.5S342.4 8.3 306.7 6.6c-35.8-1.7-143.6-1.7-179.4 0-35.7 1.7-67.2 9.9-93.5 36.2S8.3 105.6 6.6 141.3c-1.7 35.8-1.7 143.6 0 179.4 1.7 35.7 9.9 67.2 36.2 93.5s57.8 34.5 93.5 36.2c35.8 1.7 143.6 1.7 179.4 0 35.7-1.7 67.2-9.9 93.5-36.2s34.5-57.8 36.2-93.5c1.7-35.8 1.7-143.6 0-179.4zM398.8 388c-7.8 19.6-23 35-42.6 42.6-29.5 11.7-99.4 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-35-23-42.6-42.6-11.7-29.5-9-99.4-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 23-35 42.6-42.6 29.5-11.7 99.4-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 35 23 42.6 42.6 11.7 29.5 9 99.4 9 132.1s2.6 102.7-9 132.1z" fill="black" />
-                </svg>
-                </a>
-        
-                <!-- Facebook Icon -->
-                <a href="https://www.facebook.com/profile.php?id=61569402947947" target="_blank" class="icon facebook">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M22.676 0h-21.352c-.731 0-1.324.593-1.324 1.324v21.352c0 .731.593 1.324 1.324 1.324h11.482v-9.288h-3.128v-3.622h3.128v-2.673c0-3.099 1.894-4.788 4.661-4.788 1.325 0 2.463.098 2.793.142v3.24h-1.916c-1.504 0-1.795.715-1.795 1.763v2.316h3.591l-.467 3.622h-3.124v9.288h6.131c.731 0 1.324-.593 1.324-1.324v-21.352c0-.731-.593-1.324-1.324-1.324z"/>
-                    </svg>
-                </a>
-        
-                <!-- Phone Icon -->
-                <a href="tel:+48572870161" class="icon phone">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                        <path d="M23.488 16.816l-5.44-2.336c-.832-.352-1.808-.144-2.384.512l-2.176 2.672c-3.712-1.6-6.832-4.72-8.432-8.432l2.672-2.176c.656-.576.872-1.552.512-2.384l-2.336-5.44c-.48-1.104-1.872-1.6-3.024-1.12l-2.8 1.2c-.8.352-1.36 1.08-1.52 1.92-.704 3.888.376 10.592 6.616 16.832s12.944 7.32 16.832 6.616c.84-.16 1.568-.72 1.92-1.52l1.2-2.8c.496-1.152-.016-2.544-1.12-3.024z"/>
-                    </svg>
-                </a>
-            </div>
-        </div>
-        <div class="footer-info-contact">
-            <div class="footer-info-left">
-                <a href="index.html">Strona Główna</a>
-                <a href="index.html">Galeria</a>
-            </div>
-            <div class="footer-info-right">
-                <a href="ceny.html">Cennik</a>
-            </div>
-        </div>
-    </div>
+            <script src="script.js"></script>
 
-    <div id="footer-container"></div>
-
-    <script src="script.js"></script> <!-- Load script.js here -->
-</body>
-</html>
+            <script src="script.js"></script> <!-- Load script.js here -->
+        </body>
+    </html>

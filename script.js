@@ -18,50 +18,46 @@ function applyDarkMode() {
 }
 
 // Function to load header and footer
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // Apply dark mode initially
     applyDarkMode();
 
-    fetch("header.html")
-        .then(response => {
-            if (!response.ok) {
-                throw new Error("Network response was not ok " + response.statusText);
-            }
-            return response.text();
-        })
-        .then(data => {
-            console.log("Header content fetched:", data); // Log fetched header content
-            document.getElementById("header-container").innerHTML = data;
+    // Function to fetch and inject HTML content
+    function fetchAndInsertHTML(url, containerId, callback) {
+        fetch(url)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Network response was not ok: ${response.statusText}`);
+                }
+                return response.text();
+            })
+            .then(data => {
+                console.log(`${url} content fetched:`, data); // Log fetched content
+                document.getElementById(containerId).innerHTML = data;
+                if (callback) callback(); // Execute callback if provided
+                console.log(`${url} content inserted into #${containerId}.`);
+            })
+            .catch(error => {
+                console.error(`There was a problem fetching ${url}:`, error);
+            });
+    }
 
-            // After the header is loaded, set up event listeners
-            setupHamburgerMenu();
-            setupThemeSwitcher(); // Setup theme switcher after header is loaded
-            console.log("Event listeners for hamburger menu and theme switcher set up.");
-        })
-        .catch(error => {
-            console.error("There was a problem with the fetch operation for the header:", error);
-        });
+    // Fetch and insert header
+    fetchAndInsertHTML("header.html", "header-container", () => {
+        setupHamburgerMenu();
+        setupThemeSwitcher();
+    });
 
-    /* Load the footer 
-    fetch("footer.html")
-        .then(response => {
-            if (!response.ok) {
-                throw new Error("Network response was not ok " + response.statusText);
-            }
-            return response.text();
-        })    
+    // Fetch and insert footer
+    fetchAndInsertHTML("footer1.html", "footer-photo-container");
 
+    // Fetch and insert sidebar
+    fetchAndInsertHTML("footer2.html", "footer-info-adress");
 
-        .then(data => {
-            console.log("Footer content fetched:", data); // Log fetched footer content
-            document.getElementById("footer-container").innerHTML = data;
-            console.log("Footer content inserted into the DOM.");
-        })
-        .catch(error => {
-            console.error("There was a problem with the fetch operation for the footer:", error);
-        });  */
+    // Fetch and insert main content
+    fetchAndInsertHTML("footer3.html", "footer-container2");
 
-
+    fetchAndInsertHTML("footer4.html", "footer-info-contact");
 });
 
 // Function to set up the theme switcher
@@ -139,3 +135,22 @@ function toggleDescription(tile)  //ROZSZERZANIE OFERTY
         description.style.maxHeight = description.scrollHeight + 'px'; // Ustalamy wysokość na podstawie zawartości
     }
 }
+
+//USUWANIE WISZĄCYCH ZNAKÓW
+document.addEventListener("DOMContentLoaded", function () {
+    function avoidHangingWords(selector) {
+        const elements = document.querySelectorAll(selector);
+
+        elements.forEach(element => {
+            let text = element.innerHTML;
+
+            // Zamiana " i ", " w ", " z " na niełamliwą spację
+            text = text.replace(/\b([iIwWzZ])\s+/g, '$1&nbsp;');
+
+            element.innerHTML = text;
+        });
+    }
+
+    // Zastosowanie dla elementów z określonym selektorem (np. akapity, nagłówki)
+    avoidHangingWords("p, h1, h2, h3, h4, h5, h6");
+});

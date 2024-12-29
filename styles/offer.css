@@ -7,6 +7,14 @@ a:hover{
     color: white;
 }
 
+h2{
+    font-size: 20px;
+}
+
+p{
+    font-size: 20px;
+}
+
 /* Kontener dla kolumn */
 .columns {
     align-items: stretch;

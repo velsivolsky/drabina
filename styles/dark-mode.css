@@ -95,4 +95,18 @@ body.dark-mode {
         filter:brightness(0.8);
     }
 
+    #member1{
+        background-color: #424242;
+    }
+    #member2{
+        background-color: #1d1d1d;
+    }
+    #member2description{
+        h1, h2, h3, p{
+            color: #ece5c6;
+        }
+    }
+    #member3{
+        background-color: #424242;
+    }
 }

@@ -13,9 +13,13 @@ body{
     font-family: "PP Acma Thin";
     src: url("/resources/fonts/PPAcma-Thin.otf") format(opentype)
 }
-h1, h2{
+h1, h2, h3{
     font-family : "PP Acma Bold";
     
+}
+
+p{
+    font-family: "PP Acma Thin";
 }
 .header-container{
     
@@ -224,6 +228,7 @@ h1, h2{
     margin-left:10px;
     margin-bottom:10px;
     margin-right: 10px;
+    align-content: space-between;
 }
 
 .icon {
@@ -426,8 +431,74 @@ button:hover {
     background-color: #690e24; /* Darker green on hover */
 }
 
+.team-member {
+    h1{
+        color: #ece5c6;
+    }
+    display: flex;
+    justify-content: space-between; /* Space between description and photo section */
+    align-items: center; /* Center vertically */
+    background-color: #ad1739;
+    padding: 20px; /* Optional padding around the container */
+    position: relative; /* Establish positioning context for absolute elements */
+}
 
+.team-member-description {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    color: #ece5c6;
+    padding: 20px; /* Adjust padding for spacing */
+    text-align: center; /* Center text */
+    max-width: 50%; /* Restrict width for better layout balance */
+    z-index: 3; /* Ensure it stays above the background */
+}
 
+.team-member-photo {
+    position: relative; /* Create a stacking context for images */
+    width: 420px; /* Ensure consistent width for photo section */
+    height: auto; /* Maintain aspect ratio */
+    display: flex;
+    justify-content: center; /* Center the photos horizontally */
+    align-items: center; /* Center the photos vertically */
+}
+
+.member-photo {
+    position: absolute; /* Allow stacking over the overlay photo */
+    top: 50%; /* Center vertically within the container */
+    left: 50%; /* Center horizontally within the container */
+    transform: translate(-50%, -50%); /* True centering */
+    width: 280px; /* Adjust size */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 2; /* Above the overlay */
+    object-fit: contain; /* Prevent distortion */
+}
+
+.overlay-photo {
+    position: relative; /* Keeps it in the normal flow of the container */
+    width: 420px;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Prevent distortion */
+    z-index: 1; /* Below the member photo */
+}
+
+#member2{
+    h1{
+        color: black;
+    }
+    background-color: #d4a465; 
+    height:450px; 
+    flex-direction: row-reverse;
+}
+#member2description{
+    color:black;
+}
+
+#member3{
+    background-color: #2c6e58;
+    height:450px;
+}
 
     
 
