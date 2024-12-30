@@ -1,0 +1,50 @@
+.signing-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 500px;
+}
+
+.signing-head-text{
+    z-index: 2;
+}
+
+.signing-piece1{
+    position: absolute;
+    width: 100px;
+    height: auto;
+    bottom:250px;
+    right: 500px;
+    transform: rotate(45deg);
+}
+.signing-piece2{
+    position: absolute;
+    width: 100px;
+    height: auto;
+    bottom:80px;
+    right: 466px;
+}
+.signing-piece3{
+    position: absolute;
+    width: 120px;
+    height: auto;
+    right: 800px;
+    bottom:200px;
+    transform: rotate(20deg);
+}
+
+.main-body{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    height: auto;
+    transition: height 0.3s ease;
+}
+
+.right-column{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}

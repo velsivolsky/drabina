@@ -95,6 +95,10 @@ body.dark-mode {
         filter:brightness(0.8);
     }
 
+    .form{
+        filter:brightness(0.8);
+    }
+
     #member1{
         background-color: #424242;
     }

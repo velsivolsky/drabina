@@ -18,6 +18,14 @@ h1, h2, h3{
     
 }
 
+h1{
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 60px;
+    color: #ad1739;
+}
+
 p{
     font-family: "PP Acma Thin";
 }
@@ -62,7 +70,7 @@ p{
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content:space-around;
     height: 80px;
 }
 
@@ -87,10 +95,12 @@ p{
         color:black;
         line-height: 0px;
         text-decoration: none;
+        
     }
     a:hover{
         text-decoration: underline;
         font-weight: bold;
+        color: #ad1739;
     }
 }
 .footer-logo2{
@@ -255,40 +265,63 @@ p{
 }
 
 .footer-info-contact{
-    padding: 8px;
+    padding: 0px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: -15px;
 
 }
 
 .footer-info-left{
     flex: 1; /* Ustawiamy każdą kolumnę na równą szerokość */
-    padding: 10px;
+    flex-direction: column;
+    size: 100%;
+    padding: 5px;
+    margin-right:50px;
+    margin-left:50px;
+    width: 150px;
+    
+    p{
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom:-15px;
+
+    }
+
     a {
         font-family: "PP Acma Thin";
         color:black;
-        line-height: 20px;
+        
         text-decoration: none;
+        
     }
     a:hover{
         text-decoration: underline;
         font-weight: bold;
+        color: #ad1739;
     }
 }
 .footer-info-right {
-
+    width: 150px;
     flex: 1; /* Ustawiamy każdą kolumnę na równą szerokość */
-    padding: 10px;
+    padding: 5px;
+    margin-left:-120px;
+
+    p{
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom:-15px;
+
+    }
     a {
         font-family: "PP Acma Thin";
         color:black;
-        line-height: 20px;
         text-decoration: none;
     }
     a:hover{
         text-decoration: underline;
         font-weight: bold;
+        color: #ad1739
     }
 
 }
@@ -393,7 +426,10 @@ p{
     padding: 20px; /* Padding inside the form */
     border-radius: 5px; /* Rounded corners */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-family: 'PP Acma Thin';
+
 }
+
 
 .form-group {
     margin-bottom: 15px; /* Space between form groups */
