@@ -1,0 +1,153 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.panel {
+    position:relative;
+    width: 80px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s;
+    border-radius:10px;
+    font-size: 24px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    
+    /* Zwiększona czcionka */
+    color: #000000;
+    h2{
+        font-size: 30px;
+        transform: translateY(120px);
+    }
+}
+
+.panel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    transition: opacity 0.5s ease;
+}
+
+.panel:hover::before{
+    opacity: 0.8;
+
+}
+
+.panel:nth-child(1) {
+    background-color: #c1a893;
+
+}
+
+.panel:nth-child(1)::before {
+    background-image: url('team/PSX_20241214_130703.png');
+}
+
+
+
+.panel:nth-child(2) {
+    background-color: #91bfa1;
+}
+
+.panel:nth-child(2)::before {
+    background-image: url('team/PSX_20241214_130646.png');
+}
+
+.panel:nth-child(3) {
+    background-color: #98b1c9;
+}
+
+.panel:nth-child(3)::before {
+    background-image: url('team/PSX_20241214_130613.png');
+}
+
+.panel:nth-child(4) {
+    background-color: #F3C1FF;
+}
+
+.panel:nth-child(4)::before {
+    background-image: url('https://images.unsplash.com/photo-1517841905240-472988babdf9');
+}
+
+.panel:nth-child(5) {
+    background-color: black;
+}
+
+.panel:nth-child(5)::before {
+    background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb');
+}
+
+.panel:hover {
+    transform: scale(1.1);
+    
+    h2{
+        color: white;
+        filter: drop-shadow(0px 0px 0.75rem #e31e4c);
+        transition: all 1s;
+        
+}}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+}
+
+.overlay.show {
+    display: flex;
+}
+
+.overlayContent {
+    display: flex;
+    justify-content: space-evenly; /* Ensure even spacing */
+    align-items: center; /* Align items at the top */
+    padding: 20px;
+    max-width: 80%; /* Limit the width for better centering */
+    margin-left: auto; /* Center the content horizontally */
+    
+}
+
+.overlayText {
+    color: white;
+    max-width: 70%;
+    margin-left: 20px; /* Add some left margin */
+    flex: 1;
+}
+
+.overlay img {
+    max-width: 300px;
+    margin-right: 20px; /* Add right margin */
+    flex:1;
+}
+
+#overlayName {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}

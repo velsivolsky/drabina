@@ -113,4 +113,14 @@ body.dark-mode {
     #member3{
         background-color: #424242;
     }
+
+    .panel:nth-child(even) {
+        background-color: #523939;
+        color: #b15b6e;
+    }
+    
+    .panel:nth-child(odd) {
+        background-color: #946565;
+        color: #5a071a;
+    }
 }

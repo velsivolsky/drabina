@@ -101,7 +101,7 @@ function setupHamburgerMenu() {
         document.addEventListener('click', (event) => {
             const isClickInsideMenu = navPanel.contains(event.target);
             const isClickInsideHamburger = hamburger.contains(event.target);
-            
+
             // If the click is outside the menu and hamburger, close the menu
             if (!isClickInsideMenu && !isClickInsideHamburger) {
                 navPanel.classList.remove('active');
@@ -154,3 +154,56 @@ document.addEventListener("DOMContentLoaded", function () {
     // Zastosowanie dla elementów z określonym selektorem (np. akapity, nagłówki)
     avoidHangingWords("p, h1, h2, h3, h4, h5, h6");
 });
+
+
+
+
+//O DRABINIE - ZESPÓŁ
+document.addEventListener("DOMContentLoaded", function () {
+    function avoidHangingWords(selector) {
+        const elements = document.querySelectorAll(selector);
+
+        elements.forEach(element => {
+            let text = element.innerHTML;
+
+            // Replace " i ", " w ", " z " with non-breaking space
+            text = text.replace(/\b([iIwWzZ])\s+/g, '$1&nbsp;');
+
+            element.innerHTML = text;
+        });
+    }
+
+    function showOverlay(name, imgSrc, bio) {
+        document.getElementById('overlayImg').src = imgSrc;
+        document.getElementById('overlayName').innerHTML = name; // Set the name content as HTML
+        document.getElementById('overlayText').innerHTML = bio; // Use innerHTML for HTML content
+        document.getElementById('overlay').classList.add('show');
+        
+        document.getElementById('darkmodeswitch').classList.remove('show');
+        document.getElementById('hamburger').classList.remove('show');
+        document.getElementById('darkmodeswitch').classList.add('hide');
+        document.getElementById('hamburger').classList.add('hide');
+
+        // Apply the hanging words script after content is added
+        avoidHangingWords("#overlayText p");
+    }
+
+    function hideOverlay() {
+        document.getElementById('overlay').classList.remove('show');
+
+        document.getElementById('darkmodeswitch').classList.remove('hide');
+        document.getElementById('darkmodeswitch').classList.add('show');
+
+        document.getElementById('hamburger').classList.remove('hide');
+        document.getElementById('hamburger').classList.add('show');
+    }
+
+    // Expose the functions to the global scope
+    window.showOverlay = showOverlay;
+    window.hideOverlay = hideOverlay;
+
+    // Apply the hanging words script to initial content
+    avoidHangingWords("p, h1, h2, h3, h4, h5, h6");
+});
+
+

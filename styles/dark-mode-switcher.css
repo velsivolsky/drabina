@@ -37,6 +37,18 @@
     
   }
   
+  .theme-switch-wrapper.show {
+    opacity: 1; /* Ustawia przezroczystość na 1 (widoczne) */
+    visibility: visible; /* Element jest widoczny */
+    transition: opacity 0.3s ease; /* Dodaje animację */
+}
+
+/* Styl dla elementu ukrytego */
+.theme-switch-wrapper.hide {
+    opacity: 0; /* Ustawia przezroczystość na 0 (niewidoczne) */
+    visibility: hidden; /* Element nie jest widoczny, ale zajmuje miejsce */
+    transition: opacity 0.3s ease; /* Dodaje animację */
+}
   .theme-switch__container {
     width: var(--container-width);
     height: var(--container-height);
