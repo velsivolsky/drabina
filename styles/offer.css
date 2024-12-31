@@ -248,15 +248,12 @@ p{
         /* Ustaw margines dolny dla odstępu między kafelkami */
     }
 
-    .offer-container {
-        margin-left: 110px;
-    }
 }
 
 /* Styl dla kontenera przycisku */
 .offer-container {
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     margin-top: 20px;
     margin-right: 50px;
@@ -272,6 +269,7 @@ p{
     padding: 10px 20px;
     font-size: 1em;
     font-weight: bold;
+    margin:10px;
     text-align: center;
     color: white;
     background-color: #ad1739;

@@ -42,9 +42,26 @@
     transition: height 0.3s ease;
 }
 
-.right-column{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+.right-column {
+    display: flex;            /* Enable Flexbox */
+    flex-direction: column;   /* Stack children vertically */
+    justify-content: center;  /* Center children horizontally */
+    align-items: center;      /* Center children vertically (optional) */
+    /* You can set a height if needed */
+    margin-right: 90px; 
+}
+
+
+.sign-text {
+        display: flex;
+        justify-content: center;
+    
+}
+
+
+
+.sign-photo{
+    width: 600px;
+    height: auto;
+    
 }
