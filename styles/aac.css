@@ -1,0 +1,45 @@
+.aac-description, .aac-invitation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* Centers items horizontally */
+    text-align: center;    /* Centers text within the items */
+    width: 600px;          /* Adjust width as necessary */
+    margin: 0 auto;       /* Center the container within its parent */
+    h2{
+        color: #ad1739;
+    }
+    b {
+        color: #ad1739; /* Change color for all bold text */
+    }
+}
+
+.aac-invitation{
+    margin-bottom:100px;
+}
+
+.aac-training-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers items vertically within the container */
+    align-items: center;     /* Centers items horizontally */
+    text-align: center;      /* Centers text within the items */
+    
+}
+
+
+
+.download-aac-button{
+    background-color: #ad1739;
+    border: 2px solid #ad1739;
+    color: #ece5c6;
+    line-height: 17px;
+    transition: all 0.5 ease;
+}
+
+.download-aac-button:hover{
+    border: 2px solid #ad1739;
+    color: #ad1739;
+    border-color: #ad1739;
+    background-color: #ece5c6;
+    line-height: 17px;
+}

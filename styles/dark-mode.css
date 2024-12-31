@@ -82,6 +82,24 @@ body.dark-mode {
         border-color:#ece5c6;
     }
 
+    .download-aac-button:hover{
+        border: 2px solid #ece5c6;
+        color: #ece5c6;
+        border-color: #ece5c6;
+        background-color: #242424;
+        line-height: 17px;
+        transition: all 0.5 ease;
+        
+    }
+
+    .download-aac-button{
+        background-color: #800a25;
+        border: 2px solid #800a25;
+        color: #ece5c6;
+        line-height: 17px;
+    }
+
+
     .s3{
         background-color: #1a1512;
         color: #ece5c6;
