@@ -1,3 +1,7 @@
+document.addEventListener("contextmenu", (event) => event.preventDefault()); //PREVENT RIGHT CLICK MENU
+
+
+
 // Function to apply dark mode based on localStorage
 function applyDarkMode() {
     const themeSwitcher = document.querySelector(".theme-switch__checkbox");
@@ -205,5 +209,26 @@ document.addEventListener("DOMContentLoaded", function () {
     // Apply the hanging words script to initial content
     avoidHangingWords("p, h1, h2, h3, h4, h5, h6");
 });
+
+
+
+//DIAGNOZY ROZIWJANIE
+
+document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+        const faqItem = question.parentElement;
+
+        // Toggle active state
+        faqItem.classList.toggle('active');
+
+        // Close other open answers
+        document.querySelectorAll('.faq-item').forEach(item => {
+            if (item !== faqItem) {
+                item.classList.remove('active');
+            }
+        });
+    });
+});
+
 
 

@@ -16,6 +16,7 @@
 }
 
 
+
 .hamburger.show {
     opacity: 1; /* Ustawia przezroczystość na 1 (widoczne) */
     visibility: visible; /* Element jest widoczny */
@@ -84,24 +85,35 @@
 }
 
 .nav-panel a {
-    text-decoration: underline;
+    text-decoration: none;
+    font-family: "PPAcma Semibold";
     color: #ece5c6;
 }
 
 .nav-panel ul {
+    font-family: "PPAcma Semibold";
     list-style: none;
     padding: 20px;
     color: #ece5c6;
 }
 
 .nav-panel ul ul {
+    font-family: "PPAcma Semibold";
     padding-left: 20px;
     color: #ece5c6;
 }
 
 .nav-panel li {
+    font-family: "PPAcma Semibold";
     margin: 10px 0;
 }
+
+.nav-panel a:hover{
+    text-decoration: underline;
+}
+
+
+
 
 .nav-panel.active {
     right: 0; /* Show the panel */

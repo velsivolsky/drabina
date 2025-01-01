@@ -143,4 +143,16 @@ body.dark-mode {
         background-color: #946565;
         color: #5a071a;
     }
+
+
+    .faq-question, .faq-answer {
+        background-color: #242424;
+        color: #ebe5c6;
+        
+
+        :where(ul, li, ol){
+            color: #ebe5c6;
+        }
+    }
+
 }

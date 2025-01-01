@@ -37,7 +37,7 @@
 .main-body{
     display:flex;
     justify-content: space-between;
-    align-items:center;
+    align-items:flex-start;
     height: auto;
     transition: height 0.3s ease;
 }
@@ -49,12 +49,22 @@
     align-items: center;      /* Center children vertically (optional) */
     /* You can set a height if needed */
     margin-right: 90px; 
+    h2{
+        text-align: center;
+        color: #ad1739;
+    }
+    p{
+        text-align: center;
+    }
+    b{
+        color: #ad1739;
+    }
 }
 
 
 .sign-text {
-        display: flex;
-        justify-content: center;
+        
+    text-align: center;
     
 }
 

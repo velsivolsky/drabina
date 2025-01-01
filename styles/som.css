@@ -1,0 +1,27 @@
+.text-container-som{
+    display: flex;
+    flex-direction: column;
+    margin-left:100px;
+    margin-right:100px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:50px;
+}
+
+.offer-button-som{
+    background-color: #ad1739;
+    color: white;
+    border: 2px solid #ad1739;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.offer-button-som:hover{
+    background-color: #ece5c6;
+    color: #ad1739;
+    border: 2px solid #ad1739;
+}
+

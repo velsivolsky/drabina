@@ -12,6 +12,7 @@
     justify-content: center;
     align-items: flex-start;
     margin-top: 100px;
+    margin-bottom:100px;
 }
 
 .panel {
@@ -38,6 +39,8 @@
     h2{
         font-size: 30px;
         transform: translateY(120px);
+        transition: all 0.5s ease;
+        
     }
 }
 
@@ -50,14 +53,20 @@
     height: 100%;
     background-size: cover;
     background-position: center;
+    border-radius:10px;
     opacity: 0.2;
     transition: opacity 0.5s ease;
+    
+    
 }
 
 .panel:hover::before{
     opacity: 0.8;
+    
 
 }
+
+
 
 .panel:nth-child(1) {
     background-color: #c1a893;
@@ -66,6 +75,7 @@
 
 .panel:nth-child(1)::before {
     background-image: url('team/PSX_20241214_130703.png');
+    
 }
 
 
@@ -104,11 +114,16 @@
 
 .panel:hover {
     transform: scale(1.1);
+    width: 200px;
+    
+
     
     h2{
         color: white;
         filter: drop-shadow(0px 0px 0.75rem #e31e4c);
-        transition: all 1s;
+        transform: translateY(120px) rotate(-90deg);
+        
+        transition: all 0.5s ease;
         
 }}
 
