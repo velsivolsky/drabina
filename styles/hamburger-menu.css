@@ -82,29 +82,30 @@
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     transition: right 0.3s ease;
     z-index: 999;
+    font-family: "PP Acma Semibold";
 }
 
 .nav-panel a {
     text-decoration: none;
-    font-family: "PPAcma Semibold";
+    font-family: "PP Acma Semibold";
     color: #ece5c6;
 }
 
 .nav-panel ul {
-    font-family: "PPAcma Semibold";
+    font-family: "PP Acma Semibold";
     list-style: none;
     padding: 20px;
     color: #ece5c6;
 }
 
 .nav-panel ul ul {
-    font-family: "PPAcma Semibold";
+    font-family: "PP Acma Semibold";
     padding-left: 20px;
     color: #ece5c6;
 }
 
 .nav-panel li {
-    font-family: "PPAcma Semibold";
+    font-family: "PP Acma Semibold";
     margin: 10px 0;
 }
 

@@ -109,9 +109,10 @@ p{
 
 .footer-container2{
     margin-top:15px;
+    font-family: "PP Acma Thin";
     display:block;
     a{
-        font-family: "PP Acma Thin";
+        
         color:black;
         line-height: 0px;
         text-decoration: none;
