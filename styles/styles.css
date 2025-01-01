@@ -101,6 +101,7 @@ p{
 .footer-info-adress{
     p{
         font-family: "PP Acma Thin";
+        font-size: 15px;
         color: black;
     }
     line-height:5px;
