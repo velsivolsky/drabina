@@ -14,6 +14,7 @@ h1 {
     width: 100%;
     margin: auto;
     max-width: 1000px;
+    margin-bottom: 25px;
 
 }
 
@@ -73,6 +74,7 @@ h1 {
 .file-card .card-content {
     padding: 20px;
     text-align: center;
+    
 }
 
 .file-card .file-title {
