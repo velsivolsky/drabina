@@ -1,0 +1,125 @@
+.contact-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    h1{
+        
+        font-size: 40px;
+        color: #ad1739;
+        
+
+    }
+}
+
+
+.social-container {
+    display: flex;
+    gap: 30px; /* Odstęp między przyciskami */
+    justify-content: center; /* Wyśrodkowanie na stronie */
+    align-items: center; /* Wyrównanie w pionie */
+    margin: 20px; /* Odstęp zewnętrzny od kontenera */
+    margin-top:60px;
+}
+
+.insta, .whatsap, .face {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none; /* Usuwa podkreślenie w linkach */
+}
+
+.svgContainerinsta, .svgContainerWhatsap, .svgContainerFace {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    transition: all 0.3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BGinsta, .BGwhatsap, .BGface {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 9px;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+/* Stylizacja indywidualna dla każdego przycisku */
+.BGinsta {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.BGwhatsap {
+    background: #075e54;
+}
+
+.BGface {
+    background: #1877f2;
+}
+
+/* Efekty hover */
+.insta:hover .BGinsta,
+.whatsap:hover .BGwhatsap,
+.face:hover .BGface {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+}
+
+.insta:hover .svgContainerinsta,
+.whatsap:hover .svgContainerWhatsap,
+.face:hover .svgContainerFace {
+    background-color: rgba(156, 156, 156, 0.466);
+}
+
+/* Tooltip style */
+.tooltip {
+    position: absolute;
+    bottom: 100%; /* Pozycjonowanie nad przyciskiem */
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom:5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.insta .tooltip {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.whatsap .tooltip {
+    background: #075e54;
+}
+
+.face .tooltip {
+    background: #1877f2;
+}
+
+.insta:hover .tooltip,
+.whatsap:hover .tooltip,
+.face:hover .tooltip {
+    opacity: 1;
+}
