@@ -441,16 +441,74 @@ p{
 }
 
 .form-container {
-    width: 600px; /* Set width of the form to 200px */
-    margin: 0 auto; /* Center the form on the page */
-    height: 412px;
-    background: #ece5c6; /* White background for the form */
-    padding: 20px; /* Padding inside the form */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    font-family: 'PP Acma Thin';
-
-}
+    background-color: #ece5c6;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  button {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .policy {
+    font-size: 0.8em;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .policy a {
+    color: #ad1739;
+    text-decoration: underline;
+  }
 
 
 .form-group {
@@ -460,11 +518,13 @@ p{
 label {
     display: block; /* Block display for labels */
     margin-bottom: 5px; /* Space below labels */
+    font-family: "PP Acma Thin";
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
+    font-family: "PP Acma Thin";
     width: 100%; /* Full width of the input area */
     padding: 5px; /* Inner padding */
     border: 1px solid #ccc; /* Light gray border */

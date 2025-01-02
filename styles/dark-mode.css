@@ -110,6 +110,15 @@ body.dark-mode {
     .form-container{
         background-color: #5a071a;
         color: #ece5c6;
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            color:#ebe5c6;
+          }
+          input, textarea {
+            background-color: #ebe5c6;
+          }
     }
     .map{
         filter:brightness(0.8);
@@ -151,6 +160,30 @@ body.dark-mode {
         
 
         :where(ul, li, ol){
+            color: #ebe5c6;
+        }
+    }
+    .text-container-pp, .text-container-rodo{
+
+        h2{
+            font-size:25px;
+            color: #ad1739
+        }
+        p{
+            font-size:15px;
+            color: #ece5c6;
+        }
+        a{
+            color: #ece5c6;
+            transition: color 0.5 ease;
+        }
+        a:hover{
+            color: #ad1739;
+        }
+    }
+
+    .text-container-rodo{
+        li{
             color: #ebe5c6;
         }
     }
