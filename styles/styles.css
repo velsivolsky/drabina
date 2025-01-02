@@ -9,21 +9,21 @@ body{
 
 @font-face {
     font-family: "PP Acma Bold";
-    src: url("/resources/fonts/PPAcma-Bold.otf") format(opentype); 
+    src: url("../resources/fonts/PPAcma-Bold.otf") format(opentype); 
 }
 @font-face{
     font-family: "PP Acma Thin";
-    src: url("/resources/fonts/PPAcma-Thin.otf") format(opentype);
+    src: url("../resources/fonts/PPAcma-Thin.otf") format(opentype);
 }
 
 @font-face{
     font-family: "PP Acma Book";
-    src: url("/resources/fonts/PPAcma-Book.otf") format(opentype);
+    src: url("../resources/fonts/PPAcma-Book.otf") format(opentype);
 }
 
 @font-face{
     font-family: "PP Acma Semibold";
-    src: url("/resources/fonts/PPAcma-Semibold.otf") format(opentype);
+    src: url("../resources/fonts/PPAcma-Semibold.otf") format(opentype);
 }
 
 
