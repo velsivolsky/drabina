@@ -21,6 +21,7 @@ h1 {
 }
 /* Styl dla tabeli */
 table {
+    
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
@@ -28,12 +29,14 @@ table {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
 }
 
 
 th, td {
     padding: 15px;
     font-size: 1em;
+    font-family: "PP Acma Thin"
 }
 th {
     background-color: #ad1739;
@@ -82,6 +85,7 @@ tr:hover {
      justify-content: center;
     text-align: center; /* Wyśrodkowanie przycisku */
     margin-top: 20px;
+    margin-bottom: 25px;
 }
 
 /* Styl dla przycisku */
