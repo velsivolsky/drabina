@@ -2,5 +2,14 @@
     .header-logo{
         max-width: 60%;
     }
-
+    .theme-switch {
+        margin-top: 8px;
+        --toggle-size: 20.5px; /* Zmniejszenie rozmiaru */
+        --container-width: 2.8125em; /* Zmniejszenie szerokości kontenera */
+        --container-height: 1.25em; /* Zmniejszenie wysokości kontenera */
+        --container-radius: 3.125em; /* Zmniejszenie promienia kontenera */
+        --circle-container-diameter: 1.6875em; /* Zmniejszenie średnicy kontenera okręgu */
+        --sun-moon-diameter: 1.0625em; /* Zmniejszenie średnicy słońca i księżyca */
+    }
 }
+
