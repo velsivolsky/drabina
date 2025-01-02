@@ -132,3 +132,23 @@
 .hamburger.active .bar:nth-child(3) {
     transform: rotate(45deg) translate(-5px, -6px);
 }
+
+
+
+@media (max-width: 768px) {
+    .nav-panel {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Ustawienie nawigacji całkowicie poza ekranem */
+        height: 100%;
+        width: 80%; /* Dostosowanie szerokości */
+        background-color: #ad1739;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+        transition: right 0.3s ease;
+        z-index: 999;
+    }
+
+    .nav-panel.active {
+        right: 0; /* Otwiera nawigację */
+    }
+}

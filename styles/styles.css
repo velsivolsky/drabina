@@ -87,6 +87,7 @@ p{
 .footer-container{
     padding: 50px;
     display: flex;
+    height:auto;
     flex-wrap: wrap;
     justify-content:space-around;
     height: 80px;
@@ -142,7 +143,7 @@ p{
 .check-offer-button{
     text-align: center;
     height: 0;
-    line-height: 2;
+    line-height: 1;
     font-family: "PP Acma Bold";
     height: 80px;
     width:120px;
@@ -163,6 +164,7 @@ p{
 }
 
 .photo-description{
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: flex;
