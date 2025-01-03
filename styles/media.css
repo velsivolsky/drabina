@@ -1,56 +1,122 @@
 @media (max-width: 768px) {
-
-
-    body {
-        overflow-x: hidden; /* Zapobiega poziomemu przewijaniu */
+    .nav-panel{
+        max-width: 200px;
+        overflow: auto;
+        font-size: 15px;
     }
-
-    body.dark-mode .footer-container,
-    body.dark-mode .s3 {
-        background-color: #242424 !important;
-    }
-    #header-container {
+    .header-container {
         max-width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px;
         position: relative;
-    
-    .nav-panel{
-        max-width: 200px;
-        overflow: auto;
-        font-size: 15px;
     }
 
-
     .header-logo {
-        width: 100px;
+        width: 120px;
         height: auto;
         position: absolute;
-        left: 10vw;
+        left: 4vw;
         top: 6vh;
     }
 
     .hamburger {
         position: absolute;
-        left: 52vw;
+        left: -12vw;
         top: 1vh;
         cursor: pointer;
     }
 
     .theme-switch-wrapper {
         position: absolute;
-        left: 50vw;
+        left: -14vw;
         top: 0.4vh;
     }
 
-    .main-container {
-        padding: 10px;
-        width: 100%; /* Ustaw szerokość na 100% */
+
+    .main-logo-index{
+        width:100%;
+        height:auto;
+    }
+
+    .main-title{
+        font-size: 1.5rem;
+    }
+
+    .photo-description {
+        flex-direction: column; /* Stack the description and photo vertically */
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .description-home {
+        max-width: 90%; /* Ensure the content doesn't exceed the viewport width */
+        text-align: center; /* Center-align text for better readability */
+    }
+
+    .photo-container {
+        margin: 20px 0;
+        width: 100%; /* Make the photo container take full width */
+    }
+
+    .photo-home {
+        width: 100%; /* Make the image responsive */
+        height: auto;
+    }
+
+    .overlay1,
+    .overlay2 {
+        width: 50px; /* Adjust overlay size for smaller screens */
+    }
+
+    .button-container-main {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Add spacing between buttons */
+    }
+
+    .button-container-main :where(.button-offer-main, .button-gallery-main) {
+        width: 80%; /* Buttons take most of the screen width */
+        height: 40px; /* Slightly taller buttons for better tap targets */
+        font-size: 14px;
+    }
+
+    .s2-photo-overlay {
+        text-align: center;
+        margin: 20px 10px;
+    }
+
+    .s2-photo-overlay h2 {
+        font-size: 18px; /* Adjust heading size */
+        margin-bottom: 10px;
+    }
+
+    .team-button-s2 {
+        width: 80%; /* Make the button wider */
+        height: 40px;
+        font-size: 14px;
     }
 }
+
+.s3{
+    display: flex;
+    flex-direction: column;
 }
+
+.form-map{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: -37px;
+}
+
+.map{
+    width:100%;
+    
+    justify-self: center;
+}
+
+
 
 
 
