@@ -16,7 +16,9 @@
         }
     }
     .nav-panel{
-        max-width: 300px;
+        max-width: 200px;
+        overflow: auto;
+        font-size: 15px;
     }
     .header-container {
         max-width: 100%;
