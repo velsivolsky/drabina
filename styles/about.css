@@ -1,41 +1,38 @@
-.desc{
+.desc {
     text-align: center;
-    margin-left:300px;
-    margin-right:300px;
-    color:#ad1739;
+    margin-left: 300px;
+    margin-right: 300px;
+    color: #ad1739;
 }
 
-@media (max-width: 768px)  {
-.header-container{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: relative;
-    max-width:100%;
-    .header-logo{
-        width:100px;
-        height:auto;
-        transform: translate(-30px, -30px);
-    }
-    .hamburger{
-        /*transform: translate(130px, -30px) !important;*/
-        margin-left: auto;
-    }
-    .theme-switch-wrapper{
-        /*transform: translate(150px, -20px) !important;  */
-        margin-left: 10px; /* Space between hamburger and theme switch */
-        .theme-switch {
-            --toggle-size: 10px;
+@media (max-width: 768px) {
+    .header-container {
+        display: flex;
+        justify-content: flex-start;
+        max-width: 100%;
+
+        .header-logo {
+            width: 100px;
+            height: auto;
+            transform: translate(-30px, -30px);
         }
-        .fixed-header {
-            position: absolute; /* Change to absolute positioning */
-            top: 10px; /* Distance from the top */
-            right: 10px; /* Distance from the right */
+    
+        .hamburger {
+            transform: translate(10px, -30px) !important;
+        }
+
+        .theme-switch-wrapper {
+            transform: translate(150px, -20px) !important;
+
+            .theme-switch {
+                --toggle-size: 10px;
+            }
         }
     }
-}
-    .desc{
-        margin:0;
+    
+
+    .desc {
+        margin: 0;
     }
 
     .overlay {
@@ -47,96 +44,107 @@
         height: 100%;
         background: rgba(0, 0, 0, 0.8);
         justify-content: center;
-        align-items: flex-start; /* Align content to the top */
+        align-items: flex-start;
+        /* Align content to the top */
         color: white;
         font-size: 20px;
         text-align: left;
-        overflow-y: auto; /* Enable vertical scrolling */
-        padding: 20px; /* Add padding around the overlay */
-        box-sizing: border-box; /* Include padding in the height calculation */
-    
-    
-    .overlay.show {
-        display: flex;
-    }
-    
-    .overlayContent {
-        display: flex;
-        flex-direction: column; /* Stack elements vertically */
-        align-items: center;
-        max-width: 100%; /* Limit content width */
-        margin: auto; /* Center horizontally */
-        text-align: center;
-        padding: 5px;
+        overflow-y: auto;
+        /* Enable vertical scrolling */
+        padding: 20px;
+        /* Add padding around the overlay */
         box-sizing: border-box;
-         /* Optional: slightly transparent background for better visibility */
-        border-radius: 10px; /* Optional: rounded corners */
+        /* Include padding in the height calculation */
+
+
+        .overlay.show {
+            display: flex;
+        }
+
+        .overlayContent {
+            display: flex;
+            flex-direction: column;
+            /* Stack elements vertically */
+            align-items: center;
+            max-width: 100%;
+            /* Limit content width */
+            margin: auto;
+            /* Center horizontally */
+            text-align: center;
+            padding: 5px;
+            box-sizing: border-box;
+            /* Optional: slightly transparent background for better visibility */
+            border-radius: 10px;
+            /* Optional: rounded corners */
+        }
+
+        .overlay img {
+            max-width: 100%;
+            height: auto;
+
+            /* Add spacing below the image */
+        }
+
+        .overlayText {
+            max-width: 120%;
+            margin: 0;
+            text-align: center;
+            line-height: 1;
+            /* Space between text and other elements */
+        }
+
+        #overlayName {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
     }
-    
+
     .overlay img {
-        max-width: 100%;
+        width: 250px;
         height: auto;
-        
-         /* Add spacing below the image */
-    }
-    
-    .overlayText {
-        max-width: 120%;
-        margin: 0;
-        text-align: center;
-        line-height: 1;
-         /* Space between text and other elements */
-    }
-    
-    #overlayName {
-        font-size: 1.5em;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }}
-    .overlay img {
-        width:250px;
-        height:auto;
         transform: translate(10px, -25px);
-        
+
     }
 }
 
-
+/*----------------------------------------*/
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     margin-top: 100px;
-    margin-bottom:100px;
+    margin-bottom: 100px;
 }
 
 .panel {
-    position:relative;
+    position: relative;
     width: 80px;
     height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align:center;
+    text-align: center;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     margin: 10px;
     cursor: pointer;
     position: relative;
     transition: transform 0.3s;
-    border-radius:10px;
+    border-radius: 10px;
     font-size: 24px;
     opacity: 1;
     transition: all 0.5s ease;
-    
+
     /* Zwiększona czcionka */
     color: #000000;
-    h2{
+
+    h2 {
         font-size: 30px;
         transform: translateY(120px);
         transition: all 0.5s ease;
-        
+
     }
 }
 
@@ -149,16 +157,16 @@
     height: 100%;
     background-size: cover;
     background-position: center;
-    border-radius:10px;
+    border-radius: 10px;
     opacity: 0.2;
     transition: opacity 0.5s ease;
-    
-    
+
+
 }
 
-.panel:hover::before{
+.panel:hover::before {
     opacity: 0.8;
-    
+
 
 }
 
@@ -171,7 +179,7 @@
 
 .panel:nth-child(1)::before {
     background-image: url('team/ola.png');
-    
+
 }
 
 .panel:nth-child(2) {
@@ -209,17 +217,18 @@
 .panel:hover {
     transform: scale(1.1);
     width: 200px;
-    
 
-    
-    h2{
+
+
+    h2 {
         color: white;
         filter: drop-shadow(0px 0px 0.75rem #e31e4c);
         transform: translateY(120px) rotate(-90deg);
-        
+
         transition: all 0.5s ease;
-        
-}}
+
+    }
+}
 
 .overlay {
     display: none;
@@ -242,25 +251,31 @@
 
 .overlayContent {
     display: flex;
-    justify-content: space-evenly; /* Ensure even spacing */
-    align-items: center; /* Align items at the top */
+    justify-content: space-evenly;
+    /* Ensure even spacing */
+    align-items: center;
+    /* Align items at the top */
     padding: 20px;
-    max-width: 80%; /* Limit the width for better centering */
-    margin-left: auto; /* Center the content horizontally */
-    
+    max-width: 80%;
+    /* Limit the width for better centering */
+    margin-left: auto;
+    /* Center the content horizontally */
+
 }
 
 .overlayText {
     color: white;
     max-width: 70%;
-    margin-left: 20px; /* Add some left margin */
+    margin-left: 20px;
+    /* Add some left margin */
     flex: 1;
 }
 
 .overlay img {
     max-width: 300px;
-    margin-right: 20px; /* Add right margin */
-    flex:1;
+    margin-right: 20px;
+    /* Add right margin */
+    flex: 1;
 }
 
 #overlayName {
