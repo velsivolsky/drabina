@@ -1,0 +1,111 @@
+.form-container {
+    background-color: #ece5c6;
+    padding: 20px;
+    
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  button {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .policy {
+    font-size: 0.8em;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .policy a {
+    color: #ad1739;
+    text-decoration: underline;
+  }
+
+
+.form-group {
+    padding-left:10px;
+    padding-right:10px;
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below labels */
+    font-family: "PP Acma Thin";
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    font-family: "PP Acma Thin";
+    width: 100%; /* Full width of the input area */
+    padding: 5px; /* Inner padding */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Slightly rounded corners */
+}
+
+textarea {
+    resize: none; /* Prevent resizing the textarea */
+}
+
+button {
+    padding: 10px 10px; /* Padding around the button */
+    background-color: #ad1739; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 10px; /* Slightly rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+button:hover {
+    background-color: #690e24; /* Darker green on hover */
+}

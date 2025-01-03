@@ -55,10 +55,16 @@
     }
     p{
         text-align: center;
+        font-size: 20px;
     }
     b{
         color: #ad1739;
     }
+}
+
+.form-sign{
+    display:flex;
+    flex-direction: row;
 }
 
 
@@ -74,4 +80,127 @@
     width: 600px;
     height: auto;
     
+}
+
+.form-container2, .right-column {
+    max-width: 500px; /* Ustal maksymalną szerokość formularza */
+    margin: auto; /* Wyśrodkowanie formularza */
+    padding: 20px; /* Dodanie odstępu wewnętrznego */
+    border: 1px solid #ccc; /* Obramowanie formularza */
+    border-radius: 8px; /* Zaokrąglenie rogów formularza */
+    background-color: #ece5c6; /* Tło formularza */
+}
+
+.form-group2 {
+    margin-bottom: 15px; /* Odstęp między grupami formularza */
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column; /* Ustawienie elementów w kolumnie */
+}
+
+.checkbox-group div {
+    display: flex;
+    align-items: center; /* Wyrównanie checkboxa i tekstu w pionie */
+    margin-bottom: 5px; /* Odstęp między checkboxami */
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 10px; /* Odstęp między checkboxem a etykietą */
+}
+
+button {
+    background-color: #ad1739; /* Kolor tła przycisku */
+    color: white; /* Kolor tekstu przycisku */
+    padding: 10px 15px; /* Padding wewnętrzny przycisku */
+    border: none; /* Bez obramowania */
+    border-radius: 4px; /* Zaokrąglenie rogów przycisku */
+    cursor: pointer; /* Kursor jako wskaźnik przy najechaniu */
+    transition: background-color 0.3s; /* Animacja.form-container2 {
+    max-width: 600px; /* Ustal maksymalną szerokość formularza */
+    margin: auto; /* Wyśrodkowanie formularza */
+    padding: 20px; /* Dodanie odstępu wewnętrznego */
+    border: 1px solid #ccc; /* Obramowanie formularza */
+    border-radius: 8px; /* Zaokrąglenie rogów formularza */
+    background-color: #ece5c6; /* Tło formularza */
+}
+
+.form-container2 {
+    max-width: 600px; /* Ustal maksymalną szerokość formularza */
+    margin: auto; /* Wyśrodkowanie formularza */
+    padding: 20px; /* Dodanie odstępu wewnętrznego */
+    border: 1px solid #ccc; /* Obramowanie formularza */
+    border-radius: 8px; /* Zaokrąglenie rogów formularza */
+    background-color: #ece5c6; /* Tło formularza */
+}
+
+.form-group2 {
+    margin-bottom: 15px; /* Odstęp między grupami formularza */
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column; /* Ustawienie elementów w kolumnie */
+    margin-top: 20px
+}
+
+.checkbox-group div {
+    display: flex;
+    align-items: center; /* Wyrównanie checkboxa i tekstu w pionie */
+    margin-bottom: 5px; /* Odstęp między checkboxami */
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 5px; /* Odstęp między checkboxem a etykietą */
+    margin-left: 0; /* Usunięcie lewego marginesu */
+}
+
+button {
+    background-color: #ad1739; /* Kolor tła przycisku */
+    color: white; /* Kolor tekstu przycisku */
+    padding: 10px 15px; /* Padding wewnętrzny przycisku */
+    border: 2px solid #ad1739; /* Bez obramowania */
+    border-radius: 10px; /* Zaokrąglenie rogów przycisku */
+    cursor: pointer; /* Kursor jako wskaźnik przy najechaniu */
+    transition: all 0.3s; /* Animacja zmiany koloru */
+}
+.submit-container{
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the button horizontally */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+textarea {
+    font-family: "PP Acma Thin";
+    width: 100%; /* Full width of the input area */
+    padding: 5px; /* Inner padding */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Slightly rounded corners */
+}
+
+.oferta-jaka {
+    text-align: center; /* Center the text within the label */
+    width: 100%;
+     /* Add some margin for spacing, if desired */ /* Make the label take the full width of the parent */
+     /* Add some margin for spacing, if desired */
+}
+
+label{
+    font-family: "PP Acma Thin";
+}
+
+button:hover {
+    background-color: #ebe5c6; /* Kolor przycisku po najechaniu */
+    color: #ad1739;
+    
+}   
+
+.policy {
+    text-align: center;
+    font-size: 0.9em; /* Rozmiar czcionki dla polityki */
+    color: #ece5c6; /* Kolor tekstu polityki */
 }

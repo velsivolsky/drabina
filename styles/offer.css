@@ -212,13 +212,18 @@ p{
 
 
 /* Media query dla widoku mobilnego */
-@media (max-width: 400px) {
+@media (max-width: 768px) {
+
     .columns {
         flex-direction: column;
         /* Ustaw kolumny w jednym pionowym układzie */
         width: 100%;
         /* Ustaw szerokość na 100% dla mobilnych urządzeń */
         align-items: center;
+        
+        margin: 0 auto;
+        margin-right: 10px;
+        padding: 10px;
     }
 
     .tile-image {
@@ -246,6 +251,28 @@ p{
     .tile {
         margin-bottom: 16px;
         /* Ustaw margines dolny dla odstępu między kafelkami */
+    }
+
+
+    
+    #header-container{
+        display: flex;
+        justify-content: flex-start;
+        max-width:100%;
+        .header-logo{
+            width:100px;
+            height:auto;
+            transform: translate(-30px, -30px);
+        }
+        .hamburger{
+            transform: translate(130px, -30px) !important;
+        }
+        .theme-switch-wrapper{
+            transform: translate(150px, -20px) !important;  
+            .theme-switch {
+                --toggle-size: 10px;
+            }
+        }
     }
 
 }

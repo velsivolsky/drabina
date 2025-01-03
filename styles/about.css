@@ -5,6 +5,93 @@
     color:#ad1739;
 }
 
+@media (max-width: 768px) {
+.header-container{
+    display: flex;
+    justify-content: flex-start;
+    max-width:100%;
+    .header-logo{
+        width:100px;
+        height:auto;
+        transform: translate(-30px, -30px);
+    }
+    .hamburger{
+        transform: translate(130px, -30px) !important;
+    }
+    .theme-switch-wrapper{
+        transform: translate(150px, -20px) !important;  
+        .theme-switch {
+            --toggle-size: 10px;
+        }
+    }
+}
+    .desc{
+        margin:0;
+    }
+
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: flex-start; /* Align content to the top */
+        color: white;
+        font-size: 20px;
+        text-align: left;
+        overflow-y: auto; /* Enable vertical scrolling */
+        padding: 20px; /* Add padding around the overlay */
+        box-sizing: border-box; /* Include padding in the height calculation */
+    
+    
+    .overlay.show {
+        display: flex;
+    }
+    
+    .overlayContent {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        max-width: 100%; /* Limit content width */
+        margin: auto; /* Center horizontally */
+        text-align: center;
+        padding: 5px;
+        box-sizing: border-box;
+         /* Optional: slightly transparent background for better visibility */
+        border-radius: 10px; /* Optional: rounded corners */
+    }
+    
+    .overlay img {
+        max-width: 100%;
+        height: auto;
+        
+         /* Add spacing below the image */
+    }
+    
+    .overlayText {
+        max-width: 120%;
+        margin: 0;
+        text-align: center;
+        line-height: 1;
+         /* Space between text and other elements */
+    }
+    
+    #overlayName {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }}
+    .overlay img {
+        width:250px;
+        height:auto;
+        transform: translate(10px, -25px);
+        
+    }
+}
+
 
 .container {
     display: flex;
