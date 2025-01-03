@@ -26,7 +26,7 @@
 /* Styl dla elementu ukrytego */
 .hamburger.hide {
     opacity: 0; /* Ustawia przezroczystość na 0 (niewidoczne) */
-    visibility: hidden; /* Element nie jest widoczny, ale zajmuje miejsce */
+    display:none; /* Element nie jest widoczny, ale zajmuje miejsce */
     transition: opacity 0.3s ease; /* Dodaje animację */
 }
 

@@ -6,6 +6,10 @@ body{
 
 }
 
+@font-face{
+    font-family: "Poppins";
+    src: url("../resources/fonts/Poppins-Regular.ttf") format(truetype);
+}
 
 @font-face {
     font-family: "PP Acma Bold";
@@ -41,8 +45,8 @@ h1{
 }
 
 p{
-    font-family: "PP Acma Thin";
-    font-size: 25px;
+    font-family: "Poppins";
+    font-size: 22px;
     
 }
 .header-container{
@@ -67,10 +71,7 @@ p{
     filter: drop-shadow(0px 0px 0.75rem #e31e4c);   
 }
 
-.main-logo{
-    width: 704px;
-    height: 245px;
-}
+
 
 
 .menu-icon {
@@ -84,68 +85,33 @@ p{
     transform: scale(1.1); /* Optional hover effect */
 }
 
-.footer-container{
-    padding: 50px;
-    display: flex;
-    height:auto;
-    flex-wrap: wrap;
-    justify-content:space-around;
-    height: 80px;
-    background-color:#cfae95;
-}
 
-.footer-logo {
-    width: 180px;
-    height: auto;
-}
-
-.footer-info-adress{
-    p{
-        font-family: "PP Acma Thin";
-        font-size: 15px;
-        color: black;
-    }
-    line-height:5px;
-}
-
-.footer-container2{
-    margin-top:15px;
-    font-family: "PP Acma Thin";
-    display:block;
-    a{
-        
-        color:black;
-        line-height: 0px;
-        text-decoration: none;
-        
-    }
-    a:hover{
-        text-decoration: underline;
-        font-weight: bold;
-        color: #ad1739;
-    }
-}
-.footer-logo2{
-    width: 18px;
-    height: auto;
-}
 
 .main-container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
     height: auto;
     margin-top: 50px;
-    color: #ad1739   
+    color: #ad1739;  
 }
+
+.main-logo-index{
+    width: 600px;
+    height: auto;
+}
+
+
+
 
 .check-offer-button{
     text-align: center;
     height: 0;
     line-height: 1;
-    font-family: "PP Acma Bold";
-    height: 80px;
+    font-family: "Poppins";
+    height: 40px;
     width:120px;
     background-color: #ad1739;
     border-radius: 20px;
@@ -163,69 +129,80 @@ p{
     cursor:pointer;
 }
 
-.photo-description{
-    flex: 1;
+    
+.photo-home {
+    width: 100%;
+    max-width: 100%; /* Ustaw maksymalną szerokość na 100% */
+    
+    height: auto;
+    object-fit: cover;
+    z-index: 1;
+}    
+    
+   
+
+.photo-description {
+    background-color: #ad1739;
+    width:auto;
     display: flex;
-    justify-content: center;
-    align-items: flex;
-    flex-direction: flex;
-    background-color: #ad1739;
-    height: 100%;
-    margin-top: 50px;
-    padding:100px;
-    
-    gap:50px;
-    
-}
-
-.description-home{
-    width:600px;
-    background-color: #ad1739;
-    display: column;
-    justify-content: flex;
-    width: 500px;
-    color: black;
-    margin:50px;
-    margin-top:60px;
-    text-align:center;
+    flex-direction: row;
+    justify-content: space-between; /* Umieszcza elementy po lewej i prawej stronie */
+    align-content: center;
+    align-items: flex-start;
+    margin-top:40px;
+    align-self: flex-start; /* Ustawienie po lewej stronie */
+    text-align: center;
     p{
-        color: white;
-        font-family: "PP Acma Thin"; 
+        font-size:15px;
     }
-    h2{
-        color: white;
-        font-family: "PP Acma Bold";
-    }
+    
 }
 
-.photo-container{
-    width:450px;
-    height:300px;
-    margin-top:50px;
+.description-home {
+    align-self:center;
+    color:#ece5c6;
+    display: flex;
+    flex-direction: column; /* Ustawia kierunek kolumnowy wewnątrz */
+    max-width: 50%; /* Opcjonalne ograniczenie szerokości, aby nie zajmować całej przestrzeni */
+}
+
+.photo-container {
+    width: 100%;
+    margin:60px;
+    height: auto;
     position: relative;
 }
 
-.photo-home{
+.description {
+    margin: 10px 0;
+}
+
+.description-para {
     width: 100%;
-    height: 100%;
-    z-index:1;
-    object-fit: cover;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+
+.overlay1,
+.overlay2 {
+    width: 80px;
+    height: auto;
 }
 
 .overlay1 {
     position: absolute;
-    width: 100px;
-    height: auto;
-    top: 60%; /* Pozycjonowanie w obrębie kontenera */
+    top: 60%;
     left: 10%;
     z-index: 2;
 }
 
 .overlay2 {
     position: absolute;
-    width: 100px;
-    height: auto;
-    top: 20%; /* Pozycjonowanie w obrębie kontenera */
+    top: 20%;
     left: 20%;
     z-index: 2;
 }
@@ -237,7 +214,9 @@ p{
     line-height: 2;
     flex-direction: flex;
     :where(.button-offer-main, .button-gallery-main){
-        font-family: "PP Acma-Thin";
+        font-family: "Poppins";
+        width:auto;
+        height:auto;
         background-color: #ece5c6;
         color: black;
         height:30px;
@@ -288,67 +267,8 @@ p{
     fill: #25D366; /* Zielony dla telefonu */
 }
 
-.footer-info-contact{
-    padding: 0px;
-    display: flex;
-    justify-content: space-around;
-    margin-top: -15px;
 
-}
 
-.footer-info-left{
-    flex: 1; /* Ustawiamy każdą kolumnę na równą szerokość */
-    flex-direction: column;
-    size: 100%;
-    padding: 5px;
-    margin-right:50px;
-    margin-left:50px;
-    width: 150px;
-    
-    p{
-        font-size: 15px;
-        line-height: 20px;
-        margin-bottom:-15px;
-
-    }
-
-    a {
-        font-family: "PP Acma Thin";
-        color:black;
-        
-        text-decoration: none;
-        
-    }
-    a:hover{
-        text-decoration: underline;
-        font-weight: bold;
-        color: #ad1739;
-    }
-}
-.footer-info-right {
-    width: 150px;
-    flex: 1; /* Ustawiamy każdą kolumnę na równą szerokość */
-    padding: 5px;
-    margin-left:-120px;
-
-    p{
-        font-size: 15px;
-        line-height: 20px;
-        margin-bottom:-15px;
-
-    }
-    a {
-        font-family: "PP Acma Thin";
-        color:black;
-        text-decoration: none;
-    }
-    a:hover{
-        text-decoration: underline;
-        font-weight: bold;
-        color: #ad1739
-    }
-
-}
 
 
 .s2-photo-overlay {
@@ -389,7 +309,7 @@ p{
     height: 50px;
     width:120px;
     font-size: 16px;
-    font-family:"PP Acma Thin";
+    font-family:"Poppins";
     font-weight: bold;
     transition: all 0.5s;
     background-color: #ad1739;
@@ -427,6 +347,8 @@ p{
 
 .form-map{
     display: flex;
+    flex-direction: row;
+    width:auto;
     justify-content: space-evenly;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -435,11 +357,9 @@ p{
 }
 
 .map {
-    width: 100%;
-    max-width: 600px; /* Set a max width for the map */
-    height: 400px; /* Set a height for the map */
+    width: 50%;
+    height: auto; /* Set a height for the map */
     margin: 0px auto; /* Center the map */
-    border: 1px solid #ccc; /* Optional border */
 }
 
 

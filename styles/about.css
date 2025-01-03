@@ -25,7 +25,7 @@
         height: auto;
         position: absolute;
         left: 10vw;
-        top: 5vh;
+        top: 6vh;
     }
 
     .hamburger {
@@ -293,3 +293,6 @@
     font-size: 1.2em;
     margin-bottom: 10px;
 }
+
+
+
